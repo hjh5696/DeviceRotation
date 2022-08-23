@@ -11,11 +11,7 @@ import UIKit
 class SecondViewController: BaseViewController<ThirdViewController> {
         
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .landscape
-    }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+        return .portrait
     }
     
     override func viewDidLoad() {

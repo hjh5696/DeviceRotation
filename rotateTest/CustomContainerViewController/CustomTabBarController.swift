@@ -12,9 +12,4 @@ class CustomTabBarController: UITabBarController {
     open override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         getTopMostViewController(of: self).supportedInterfaceOrientations
     }
-    
-//    override var childForStatusBarStyle: UIViewController? {
-//        print("childForStatusBarSTyle.., CustomTabBarController", getTopMostViewController(of: self))
-//        return getTopMostViewController(of: self)
-//    }
 }

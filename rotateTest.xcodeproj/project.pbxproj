@@ -24,7 +24,6 @@
 		66BD1A5328B3E2810058744D /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BD1A5228B3E2810058744D /* FourthViewController.swift */; };
 		66BD1A5628B4EAD40058744D /* TopMostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BD1A5528B4EAD40058744D /* TopMostViewController.swift */; };
 		66BD1A5928B500130058744D /* UIInterfaceOrientation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BD1A5828B500130058744D /* UIInterfaceOrientation+Extensions.swift */; };
-		66BD1A5B28B500500058744D /* UIStatusBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BD1A5A28B500500058744D /* UIStatusBar+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,6 @@
 		66BD1A5228B3E2810058744D /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		66BD1A5528B4EAD40058744D /* TopMostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMostViewController.swift; sourceTree = "<group>"; };
 		66BD1A5828B500130058744D /* UIInterfaceOrientation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIInterfaceOrientation+Extensions.swift"; sourceTree = "<group>"; };
-		66BD1A5A28B500500058744D /* UIStatusBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStatusBar+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +170,6 @@
 			children = (
 				66BD1A5528B4EAD40058744D /* TopMostViewController.swift */,
 				66BD1A5828B500130058744D /* UIInterfaceOrientation+Extensions.swift */,
-				66BD1A5A28B500500058744D /* UIStatusBar+Extensions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -317,7 +314,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				668AA189289A9C8600F5075C /* SecondViewController.swift in Sources */,
-				66BD1A5B28B500500058744D /* UIStatusBar+Extensions.swift in Sources */,
 				668AA15D289A951C00F5075C /* FirstViewController.swift in Sources */,
 				66BD1A5628B4EAD40058744D /* TopMostViewController.swift in Sources */,
 				668AA159289A951C00F5075C /* AppDelegate.swift in Sources */,

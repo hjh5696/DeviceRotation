@@ -12,22 +12,16 @@ class FirstViewController: BaseViewController<SecondViewController> {
         return .portrait
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .darkContent
-    }
-    
     @objc override func presentPageSheet() {
         let vc = SecondViewController()
         vc.presentationController?.delegate = self
         vc.delegate = self
         vc.modalPresentationStyle = .formSheet
-        vc.modalPresentationCapturesStatusBarAppearance = true
         self.present(vc, animated: true)
     }
     
     @objc override func presentFullScreen() {
         let vc = SecondViewController()
-        vc.presentationController?.delegate = self
         vc.delegate = self
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)

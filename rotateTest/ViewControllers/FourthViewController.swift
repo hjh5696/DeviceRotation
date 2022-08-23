@@ -13,10 +13,6 @@ class FourthViewController: BaseViewController<UIViewController> {
         .portrait
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        .lightContent
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue

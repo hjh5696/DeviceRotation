@@ -14,8 +14,6 @@ class BaseViewController<T: UIViewController>: UIViewController, Rotatable {
     
     let presentingVCLabel = UILabel()
     
-    let statusBarStyleLabel = UILabel()
-    
     let supportedOrientationLabel = UILabel()
     
     let presentFullScreenButton: UIButton = {
@@ -83,13 +81,11 @@ class BaseViewController<T: UIViewController>: UIViewController, Rotatable {
         
         classNameLabel.translatesAutoresizingMaskIntoConstraints = false
         presentingVCLabel.translatesAutoresizingMaskIntoConstraints = false
-        statusBarStyleLabel.translatesAutoresizingMaskIntoConstraints = false
         supportedOrientationLabel.translatesAutoresizingMaskIntoConstraints = false
         buttons.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(classNameLabel)
         view.addSubview(presentingVCLabel)
-        view.addSubview(statusBarStyleLabel)
         view.addSubview(supportedOrientationLabel)
         view.addSubview(buttons)
         
@@ -98,10 +94,8 @@ class BaseViewController<T: UIViewController>: UIViewController, Rotatable {
             classNameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             presentingVCLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             presentingVCLabel.topAnchor.constraint(equalTo: classNameLabel.bottomAnchor, constant: 20),
-            statusBarStyleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            statusBarStyleLabel.topAnchor.constraint(equalTo: presentingVCLabel.bottomAnchor, constant: 20),
             supportedOrientationLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            supportedOrientationLabel.topAnchor.constraint(equalTo: statusBarStyleLabel.bottomAnchor, constant: 20),
+            supportedOrientationLabel.topAnchor.constraint(equalTo: presentingVCLabel.bottomAnchor, constant: 20),
             buttons.topAnchor.constraint(equalTo: supportedOrientationLabel.bottomAnchor, constant: 20),
             buttons.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
@@ -118,7 +112,6 @@ class BaseViewController<T: UIViewController>: UIViewController, Rotatable {
         super.viewDidAppear(animated)
         
         classNameLabel.text = "Class: " + Self.description().replacingOccurrences(of: "PresentHierarchy.", with: "")
-        statusBarStyleLabel.text = "StatusBar Style: " + "\(self.preferredStatusBarStyle.description)"
         presentingVCLabel.text = "PresentingVC: \(self.presentingViewController?.description.replacingOccurrences(of: "PresentHierarchy.", with: "") ?? "None")"
         let context = self.presentingViewController?.definesPresentationContext == nil ? "nil" : "\(self.presentingViewController!.definesPresentationContext)"
         supportedOrientationLabel.text = "SupportedOrientation: \(supportedInterfaceOrientations.description)"

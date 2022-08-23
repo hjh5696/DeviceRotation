@@ -13,10 +13,6 @@ class ThirdViewController: BaseViewController<FourthViewController> {
         .allButUpsideDown
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        .lightContent
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .orange

@@ -20,11 +20,6 @@ extension CustomNavigationController {
   override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
       getTopMostViewController(of: self).supportedInterfaceOrientations
   }
-    
-//    override var childForStatusBarStyle: UIViewController? {
-//        print("childForStatusBarSTyle.., NavigationController", getTopMostViewController(of: self))
-//        return getTopMostViewController(of: self)
-//    }
 }
 
 
